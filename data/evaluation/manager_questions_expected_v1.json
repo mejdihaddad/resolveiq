@@ -1,0 +1,410 @@
+{
+  "questions_version": "v1",
+  "authored_before_recompute": true,
+  "frozen_expectations": {
+    "mq-01": {
+      "event_created": 22811,
+      "quiet_created": 7315,
+      "total_created": 30126
+    },
+    "mq-02": {
+      "event_days": 8,
+      "quiet_days": 7,
+      "event_per_day": 2851.4,
+      "quiet_per_day": 1045.0,
+      "total_ratio": 3.12,
+      "daily_ratio": 2.73,
+      "busiest_event_day": 18,
+      "busiest_event_n": 3784,
+      "busiest_quiet_day": 30,
+      "busiest_quiet_n": 1365
+    },
+    "mq-03": {
+      "created_total": 30126,
+      "labelled_closed": 30079,
+      "unlabelled_open": 47,
+      "event_unlabelled": 41,
+      "quiet_unlabelled": 6,
+      "event_pct_closed_basis": 28.7,
+      "event_pct_if_open_fast": 28.6,
+      "quiet_pct_closed_basis": 10.0,
+      "quiet_pct_if_open_fast": 10.0
+    },
+    "mq-04": {
+      "event_closed": 22770,
+      "event_slow": 6526,
+      "event_slow_pct": 28.7,
+      "quiet_closed": 7309,
+      "quiet_slow": 731,
+      "quiet_slow_pct": 10.0,
+      "pooled_closed": 30079,
+      "pooled_slow": 7257,
+      "pooled_slow_pct": 24.1,
+      "threshold_hours": 62.349333
+    },
+    "mq-05": {
+      "threshold_hours": 62.349333,
+      "threshold_displayed": 62.3,
+      "fitted_on_closed": 7309
+    },
+    "mq-06": {
+      "event_no_heat_n": 15307,
+      "event_no_heat_no_water_n": 6218,
+      "event_no_hot_water_n": 1245,
+      "event_no_heat_pct": 67.2,
+      "event_no_heat_no_water_pct": 27.3,
+      "event_no_hot_water_pct": 5.5,
+      "quiet_no_heat_n": 3915,
+      "quiet_no_heat_no_water_n": 2491,
+      "quiet_no_hot_water_n": 903,
+      "quiet_no_heat_pct": 53.6,
+      "quiet_no_heat_no_water_pct": 34.1,
+      "quiet_no_hot_water_pct": 12.4
+    },
+    "mq-07": {
+      "building_n": 18774,
+      "building_slow_pct": 22.8,
+      "apartment_n": 11305,
+      "apartment_slow_pct": 26.3,
+      "spread_pp": 3.5
+    },
+    "mq-08": {
+      "online_n": 14424,
+      "online_slow_pct": 23.8,
+      "phone_n": 10402,
+      "phone_slow_pct": 27.2,
+      "mobile_n": 5253,
+      "mobile_slow_pct": 19.0,
+      "spread_pp": 8.2
+    },
+    "mq-09": {
+      "highest_borough_pct": 39.4,
+      "highest_borough_n": 289,
+      "lowest_borough_pct": 12.6,
+      "lowest_borough_n": 10651,
+      "spread_pp": 26.8,
+      "borough_levels": 5
+    },
+    "mq-11": {
+      "friday_slow_pct": 42.8,
+      "friday_n": 3101,
+      "tuesday_slow_pct": 6.4,
+      "tuesday_n": 4031,
+      "spread_pp": 36.4,
+      "observed_dates": 15
+    }
+  },
+  "recomputed_from_artifacts": {
+    "mq-01": {
+      "event_created": 22811,
+      "quiet_created": 7315,
+      "total_created": 30126
+    },
+    "mq-02": {
+      "event_days": 8,
+      "quiet_days": 7,
+      "event_per_day": 2851.4,
+      "quiet_per_day": 1045.0,
+      "total_ratio": 3.12,
+      "daily_ratio": 2.73,
+      "busiest_event_day": 18,
+      "busiest_event_n": 3784,
+      "busiest_quiet_day": 30,
+      "busiest_quiet_n": 1365
+    },
+    "mq-03": {
+      "created_total": 30126,
+      "labelled_closed": 30079,
+      "unlabelled_open": 47,
+      "event_unlabelled": 41,
+      "quiet_unlabelled": 6,
+      "event_pct_closed_basis": 28.7,
+      "event_pct_if_open_fast": 28.6,
+      "quiet_pct_closed_basis": 10.0,
+      "quiet_pct_if_open_fast": 10.0
+    },
+    "mq-04": {
+      "event_closed": 22770,
+      "event_slow": 6526,
+      "event_slow_pct": 28.7,
+      "quiet_closed": 7309,
+      "quiet_slow": 731,
+      "quiet_slow_pct": 10.0,
+      "pooled_closed": 30079,
+      "pooled_slow": 7257,
+      "pooled_slow_pct": 24.1,
+      "threshold_hours": 62.34933333333333
+    },
+    "mq-05": {
+      "threshold_hours": 62.34933333333333,
+      "threshold_displayed": 62.3,
+      "fitted_on_closed": 7309
+    },
+    "mq-06": {
+      "event_no_heat_n": 15307,
+      "event_no_heat_no_water_n": 6218,
+      "event_no_hot_water_n": 1245,
+      "event_no_heat_pct": 67.2,
+      "event_no_heat_no_water_pct": 27.3,
+      "event_no_hot_water_pct": 5.5,
+      "quiet_no_heat_n": 3915,
+      "quiet_no_heat_no_water_n": 2491,
+      "quiet_no_hot_water_n": 903,
+      "quiet_no_heat_pct": 53.6,
+      "quiet_no_heat_no_water_pct": 34.1,
+      "quiet_no_hot_water_pct": 12.4
+    },
+    "mq-07": {
+      "building_n": 18774,
+      "building_slow_pct": 22.8,
+      "apartment_n": 11305,
+      "apartment_slow_pct": 26.3,
+      "spread_pp": 3.5
+    },
+    "mq-08": {
+      "online_n": 14424,
+      "online_slow_pct": 23.8,
+      "phone_n": 10402,
+      "phone_slow_pct": 27.2,
+      "mobile_n": 5253,
+      "mobile_slow_pct": 19.0,
+      "spread_pp": 8.2
+    },
+    "mq-09": {
+      "highest_borough_pct": 39.4,
+      "highest_borough_n": 289,
+      "lowest_borough_pct": 12.6,
+      "lowest_borough_n": 10651,
+      "spread_pp": 26.8,
+      "borough_levels": 5
+    },
+    "mq-11": {
+      "friday_slow_pct": 42.8,
+      "friday_n": 3101,
+      "tuesday_slow_pct": 6.4,
+      "tuesday_n": 4031,
+      "spread_pp": 36.4,
+      "observed_dates": 15
+    }
+  },
+  "agreement": [
+    {
+      "id": "mq-01",
+      "values": 3,
+      "exact_matches": 3,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-02",
+      "values": 10,
+      "exact_matches": 10,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-03",
+      "values": 9,
+      "exact_matches": 9,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-04",
+      "values": 10,
+      "exact_matches": 10,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-05",
+      "values": 3,
+      "exact_matches": 3,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-06",
+      "values": 12,
+      "exact_matches": 12,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-07",
+      "values": 5,
+      "exact_matches": 5,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-08",
+      "values": 7,
+      "exact_matches": 7,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-09",
+      "values": 6,
+      "exact_matches": 6,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-10",
+      "values": 0,
+      "exact_matches": 0,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-11",
+      "values": 6,
+      "exact_matches": 6,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-12",
+      "values": 0,
+      "exact_matches": 0,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-13",
+      "values": 0,
+      "exact_matches": 0,
+      "first_mismatch": ""
+    },
+    {
+      "id": "mq-14",
+      "values": 0,
+      "exact_matches": 0,
+      "first_mismatch": ""
+    }
+  ],
+  "all_values_agree": true,
+  "input_artifacts": {
+    "heat_jan2024_event_quiet_features_at_intake.json": {
+      "sha256": "8d26ccbb40f73d147608a99ba5e28379102e33d276bc671e841cc83f0613c013",
+      "bytes": 14221430,
+      "rows": 30126,
+      "built_at": "2026-09-23T21:43:57Z"
+    },
+    "heat_jan2024_event_quiet_slow_resolution_labels.json": {
+      "sha256": "67caa358422303cc1c6cdcb889a493df674cb01d2534948c364f132eaf5c428c",
+      "bytes": 3632305,
+      "rows": 30079,
+      "built_at": "2026-09-23T21:43:57Z",
+      "label_threshold_hours": 62.34933333333333
+    }
+  },
+  "provenance": {
+    "mq-01": {
+      "artifact": "notebooks/03_target_definition/define_slow_resolution_label.ipynb",
+      "cell": 7,
+      "quoted": "22,811 created"
+    },
+    "mq-02": {
+      "artifact": "notebooks/01_data_exploration/nyc311_snapshot_profile.ipynb",
+      "cell": 33,
+      "quoted": "2.73",
+      "also": {
+        "artifact": "notebooks/01_data_exploration/nyc311_snapshot_profile.ipynb",
+        "cell": 30,
+        "quoted": "3784"
+      }
+    },
+    "mq-03": {
+      "artifact": "notebooks/03_target_definition/define_slow_resolution_label.ipynb",
+      "cell": 15,
+      "quoted": "28.6",
+      "note": "the 47 ticket ids come from these artefacts, not an independent pull"
+    },
+    "mq-04": {
+      "artifact": "notebooks/03_target_definition/define_slow_resolution_label.ipynb",
+      "cell": 13,
+      "quoted": "6,526"
+    },
+    "mq-05": {
+      "artifact": "notebooks/03_target_definition/define_slow_resolution_label.ipynb",
+      "cell": 13,
+      "quoted": "62.349333"
+    },
+    "mq-06": {
+      "artifact": "notebooks/01_data_exploration/nyc311_snapshot_profile.ipynb",
+      "cell": 36,
+      "quoted": "n=15,307",
+      "also": {
+        "artifact": "notebooks/01_data_exploration/nyc311_snapshot_profile.ipynb",
+        "cell": 36,
+        "quoted": "n= 3,915"
+      }
+    },
+    "mq-07": {
+      "artifact": "notebooks/03_target_definition/define_slow_resolution_label.ipynb",
+      "cell": 21,
+      "quoted": "18774"
+    },
+    "mq-08": {
+      "artifact": "notebooks/03_target_definition/define_slow_resolution_label.ipynb",
+      "cell": 21,
+      "quoted": "14424"
+    },
+    "mq-09": {
+      "artifact": "notebooks/03_target_definition/define_slow_resolution_label.ipynb",
+      "cell": 21,
+      "quoted": "39.4"
+    },
+    "mq-10": {
+      "artifact": "notebooks/03_target_definition/define_slow_resolution_label.ipynb",
+      "cell": 3,
+      "absent_terms": [
+        "temperature",
+        "weather",
+        "forecast"
+      ]
+    },
+    "mq-11": {
+      "artifact": "notebooks/03_target_definition/define_slow_resolution_label.ipynb",
+      "cell": 21,
+      "quoted": "42.8"
+    },
+    "mq-12": {
+      "artifact": "data/labelled/heat_jan2024_event_quiet_features_at_intake.meta.json",
+      "key": "forbidden_fields",
+      "quoted": "incident_zip"
+    },
+    "mq-13": {
+      "artifact": "data/labelled/heat_jan2024_event_quiet_features_at_intake.meta.json",
+      "key": "forbidden_fields",
+      "quoted": "closed_date"
+    },
+    "mq-14": {
+      "artifact": "data/labelled/heat_jan2024_event_quiet_features_at_intake.meta.json",
+      "key": "windows",
+      "quoted": "22811"
+    }
+  },
+  "question_types": {
+    "category_mix": 3,
+    "limitation": 1,
+    "outcome_integrity": 1,
+    "prevalence": 2,
+    "refusal_missing_evidence": 1,
+    "refusal_outcome_field": 1,
+    "refusal_precise_geography": 1,
+    "refusal_scope": 1,
+    "threshold_provenance": 1,
+    "volume_change": 2
+  },
+  "response_types": {
+    "answer": 5,
+    "answer_with_caveat": 5,
+    "refuse": 4
+  },
+  "refusal_classes": [
+    "refusal_missing_evidence",
+    "refusal_outcome_field",
+    "refusal_precise_geography",
+    "refusal_scope"
+  ],
+  "known_limits": [
+    "every expected value is a January 2024 measurement over two windows of one complaint type; none of them is a forecast or an accuracy claim",
+    "the 47 ticket ids in mq-03 came from these artefacts, not an independent pull, so they pin a set rather than corroborate a number",
+    "grading wording is string matching on this v1 set; it is not a language-model judge and inherits every phrasing choice made here",
+    "the answers here are descriptive of past intake; no model was trained, no retrieval was run, no agent was asked",
+    "shares are one decimal and the threshold six, matching how notebook 03 published them; a grader must not re-round them differently",
+    "borough appears in answers under the open fairness/proxy review notebook 03 flagged"
+  ]
+}

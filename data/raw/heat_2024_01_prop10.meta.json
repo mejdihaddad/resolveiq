@@ -1,0 +1,12 @@
+{
+  "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.json",
+  "where": "heat/hot water, one request per January day",
+  "order": "created_date, unique_key",
+  "limit": "10% of each day's measured count, floor 40",
+  "population": "sample, proportional by day",
+  "limitation": "earliest records within each ordered slice, not a random or uniform within-day sample. Do not use it for duration, symptom-mix, or time-of-day conclusions.",
+  "rows": 5135,
+  "bytes": 2512697,
+  "sha256": "9ba98c8ffc0fc06611bab9758c036802bb6f90243880f721528b5c9b0add6763",
+  "select": "13 intake fields including street_name, latitude, longitude — local only"
+}

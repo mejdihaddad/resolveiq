@@ -1,0 +1,15 @@
+{
+  "retrieved_at": "2026-09-23T11:58:45.408573+00:00",
+  "dataset": "erm2-nwe9",
+  "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.json",
+  "params": {
+    "$select": "unique_key, created_date, complaint_type, descriptor, descriptor_2, location_type, address_type, facility_type, borough, city, incident_zip, open_data_channel_type, agency, status, closed_date, resolution_description, resolution_action_updated_date",
+    "$where": "lower(complaint_type) = 'heat/hot water' and created_date >= '2024-01-27T00:00:00' and created_date < '2024-01-28T00:00:00'",
+    "$order": "unique_key",
+    "$limit": "5000"
+  },
+  "rows": 798,
+  "sha256": "fe7eef50029daa5b8cccf7fa57fc3c4dc7445477c651407232fcb9e61c67c46a",
+  "ordering": "$order=unique_key, single page; $limit 5000 exceeded the 798 rows so no paging",
+  "limitation": "one calendar day, the lowest-volume heat day of Jan-2024; not a sample of the month and no surge behaviour in it"
+}

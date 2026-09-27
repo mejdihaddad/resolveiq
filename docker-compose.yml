@@ -1,0 +1,40 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.19.1
+    ports:
+      - "127.0.0.1:6333:6333"
+      - "127.0.0.1:6334:6334"
+    volumes:
+      - ./data/qdrant:/qdrant/storage
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file:
+      - .env
+    environment:
+      - QDRANT_URL=http://qdrant:6333
+    volumes:
+      - ./data/models/intake_risk_model_v1.joblib:/app/data/models/intake_risk_model_v1.joblib:ro
+      - ./data/models/intake_risk_model_v1.meta.json:/app/data/models/intake_risk_model_v1.meta.json:ro
+      - ./data/labelled/heat_jan2024_event_quiet_features_at_intake.json:/app/data/labelled/heat_jan2024_event_quiet_features_at_intake.json:ro
+      - ./data/labelled/heat_jan2024_event_quiet_features_at_intake.meta.json:/app/data/labelled/heat_jan2024_event_quiet_features_at_intake.meta.json:ro
+      - ./data/labelled/heat_jan2024_event_quiet_slow_resolution_labels.json:/app/data/labelled/heat_jan2024_event_quiet_slow_resolution_labels.json:ro
+      - ./data/labelled/heat_jan2024_event_quiet_slow_resolution_labels.meta.json:/app/data/labelled/heat_jan2024_event_quiet_slow_resolution_labels.meta.json:ro
+    depends_on:
+      - qdrant
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:5173:80"
+    depends_on:
+      - api
+    restart: unless-stopped

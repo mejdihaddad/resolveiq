@@ -1,0 +1,99 @@
+{
+  "built_at": "2026-09-24T22:58:09Z",
+  "built_by": "notebooks/04_evaluation_design/build_manager_question_eval_set.ipynb",
+  "questions_version": "v1",
+  "network_used": false,
+  "http_requests_sent": 0,
+  "network_guard": {
+    "libraries_checked": [
+      "httpx",
+      "requests",
+      "urllib3",
+      "openai",
+      "anthropic",
+      "google.genai",
+      "google.generativeai",
+      "vertexai",
+      "qdrant_client",
+      "ragas",
+      "langsmith"
+    ],
+    "present_in_kernel": [],
+    "meaning": "no HTTP, model, vector-store or tracing client is imported here; an import-level check, not a packet capture"
+  },
+  "input_artifacts": {
+    "heat_jan2024_event_quiet_features_at_intake.json": {
+      "sha256": "8d26ccbb40f73d147608a99ba5e28379102e33d276bc671e841cc83f0613c013",
+      "rows": 30126,
+      "windows": {
+        "event_2024-01-15_22": {
+          "created_from": "2024-01-15",
+          "created_before": "2024-01-23",
+          "rows_pulled": 22811,
+          "count_from_api": 22811
+        },
+        "quiet_2024-01-24_30": {
+          "created_from": "2024-01-24",
+          "created_before": "2024-01-31",
+          "rows_pulled": 7315,
+          "count_from_api": 7315
+        }
+      },
+      "model_inputs": [
+        "complaint_type",
+        "descriptor",
+        "descriptor_2",
+        "location_type",
+        "borough",
+        "open_data_channel_type",
+        "agency",
+        "created_hour",
+        "created_day_of_week",
+        "created_is_weekend"
+      ]
+    },
+    "heat_jan2024_event_quiet_slow_resolution_labels.json": {
+      "sha256": "67caa358422303cc1c6cdcb889a493df674cb01d2534948c364f132eaf5c428c",
+      "rows": 30079,
+      "label_threshold_hours": 62.34933333333333,
+      "label_rule": "slow_resolution = resolution_hours > label_threshold_hours, closed tickets only"
+    }
+  },
+  "carried_from_notebook_03": {
+    "label_threshold_hours": 62.34933333333333,
+    "review_flags": {
+      "borough": "coarse service jurisdiction \u2014 needs a fairness/proxy review before it is served as a feature"
+    },
+    "deliberately_excluded": {
+      "city": "redundant with borough at a different granularity (25 of 29 values are Queens neighbourhoods)",
+      "incident_zip": "precise geography and a nominal identifier; excluded from v1 pending a privacy/fairness policy"
+    },
+    "note": "notebook 03's files and threshold are read-only inputs here; nothing in this notebook rewrote them"
+  },
+  "forbidden_fields_in_scope": 39,
+  "questions": 14,
+  "expected_values": 71,
+  "all_values_agree": true,
+  "keys": [
+    "questions_version",
+    "authored_before_recompute",
+    "frozen_expectations",
+    "recomputed_from_artifacts",
+    "agreement",
+    "all_values_agree",
+    "input_artifacts",
+    "provenance",
+    "question_types",
+    "response_types",
+    "refusal_classes",
+    "known_limits"
+  ],
+  "known_limits": [
+    "this file is the run's verdict, not a second source of truth: the questions file holds the expectations, this one holds them beside what was measured",
+    "values are compared at the precision they were authored at",
+    "provenance cites cell indexes of finished runs; re-running notebook 01 or 03 could move those indexes and would break the citation, not the number",
+    "every expected value is a January 2024 measurement over two windows of one complaint type; none of them is a forecast or an accuracy claim",
+    "the 47 ticket ids in mq-03 came from these artefacts, not an independent pull, so they pin a set rather than corroborate a number",
+    "grading wording is string matching on this v1 set; it is not a language-model judge and inherits every phrasing choice made here"
+  ]
+}

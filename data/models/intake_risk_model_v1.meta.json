@@ -1,0 +1,11 @@
+{
+  "model_name": "frozen_model_1_no_borough",
+  "algorithm": "LogisticRegression",
+  "operating_cutoff": 0.28,
+  "sha256": "9daffe1971b15fd95c45f9b2fabe5c685bad909d84bfd31459cb811d7ae3b6e2",
+  "features_excluded": [
+    "borough"
+  ],
+  "calibrated": false,
+  "notes": "Score is an uncalibrated ranking score. Evaluated on 2023-2024 cohort only."
+}

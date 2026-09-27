@@ -1,0 +1,9 @@
+.env
+.venv
+data/
+notebooks/
+frontend/
+.git
+.pytest_cache
+__pycache__
+*.pyc

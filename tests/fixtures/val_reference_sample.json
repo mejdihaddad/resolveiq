@@ -1,0 +1,67 @@
+[
+  {
+    "features": {
+      "descriptor": "APARTMENT ONLY",
+      "descriptor_2": "NO HEAT",
+      "location_type": "RESIDENTIAL BUILDING",
+      "open_data_channel_type": "ONLINE",
+      "agency": "HPD",
+      "created_hour": 18,
+      "created_day_of_week": 0,
+      "created_is_weekend": 0
+    },
+    "expected_score": 0.13472128017204477
+  },
+  {
+    "features": {
+      "descriptor": "APARTMENT ONLY",
+      "descriptor_2": "NO HEAT",
+      "location_type": "RESIDENTIAL BUILDING",
+      "open_data_channel_type": "PHONE",
+      "agency": "HPD",
+      "created_hour": 21,
+      "created_day_of_week": 0,
+      "created_is_weekend": 0
+    },
+    "expected_score": 0.14855617188839787
+  },
+  {
+    "features": {
+      "descriptor": "APARTMENT ONLY",
+      "descriptor_2": "NO HEAT",
+      "location_type": "RESIDENTIAL BUILDING",
+      "open_data_channel_type": "ONLINE",
+      "agency": "HPD",
+      "created_hour": 14,
+      "created_day_of_week": 0,
+      "created_is_weekend": 0
+    },
+    "expected_score": 0.1358251505430689
+  },
+  {
+    "features": {
+      "descriptor": "APARTMENT ONLY",
+      "descriptor_2": "NO HEAT",
+      "location_type": "RESIDENTIAL BUILDING",
+      "open_data_channel_type": "ONLINE",
+      "agency": "HPD",
+      "created_hour": 9,
+      "created_day_of_week": 0,
+      "created_is_weekend": 0
+    },
+    "expected_score": 0.13721569827597357
+  },
+  {
+    "features": {
+      "descriptor": "APARTMENT ONLY",
+      "descriptor_2": "NO HEAT",
+      "location_type": "RESIDENTIAL BUILDING",
+      "open_data_channel_type": "PHONE",
+      "agency": "HPD",
+      "created_hour": 17,
+      "created_day_of_week": 0,
+      "created_is_weekend": 0
+    },
+    "expected_score": 0.14975378257065963
+  }
+]

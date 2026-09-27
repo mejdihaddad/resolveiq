@@ -1,0 +1,35 @@
+[project]
+name = "resolveiq"
+version = "0.1.0"
+description = "Local AI triage and slow-resolution-risk workbench for NYC 311 service requests"
+readme = "README.md"
+authors = [
+    { name = "mejdihaddad", email = "mejdihaddadpro@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "google-genai>=2.24.0",
+    "httpx>=0.28.1",
+    "ipykernel>=7.3.0",
+    "joblib>=1.4.0",
+    "langfuse>=4.15.6",
+    "langgraph>=1.2.12",
+    "langsmith>=0.14.1",
+    "pandas>=3.0.6",
+    "pydantic-settings>=2.15.0",
+    "qdrant-client>=1.19.1",
+    "scikit-learn>=1.9.1",
+    "tzdata>=2025.1",
+    "uvicorn[standard]>=0.53.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.26,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.8",
+]

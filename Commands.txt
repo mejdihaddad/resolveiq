@@ -1,0 +1,4 @@
+uv init --python 3.14 --package --vcs none
+uv add httpx :What it is: an HTTP client — the code that sends a request to a web server and gets the answer back. We need it because our data source is not a file we downloaded once; it's the NYC 311 API, a live web address that answers questions like "give me every HEAT/HOT WATER request created in January 2024". Everything in Week 1 — counting rows, pulling a snapshot, saving it with a checksum — is one httpx.get call after another.
+uv add pandas pydantic-settings google-genai ipykernel
+uv add --dev ruff pytest

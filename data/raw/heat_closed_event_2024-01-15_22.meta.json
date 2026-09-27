@@ -1,0 +1,12 @@
+{
+  "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.json",
+  "where": "lower(complaint_type) = 'heat/hot water' and created_date >= '2024-01-15T00:00:00' and created_date < '2024-01-23T00:00:00' and closed_date is not null",
+  "rows": 22770,
+  "sha256": "65a90477a78e8cfea8bc1c7dc252a63eb475bf40a645db5ac0cb8c2514466d3d",
+  "fetched_at_utc": "2026-09-23T03:09:39Z",
+  "select": "unique_key, created_date, closed_date, status, descriptor_2",
+  "order": "unique_key (stable for paging)",
+  "paging": "$limit 20000, $offset until a short page",
+  "population": "ALL closed HEAT/HOT WATER tickets created in the window \u2014 not a sample",
+  "limitation": "closed tickets only; safe here because ~99.8% of window intake is closed. Biased on recent months, where slow tickets are still open."
+}

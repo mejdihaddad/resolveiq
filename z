@@ -1,0 +1,47 @@
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Makefile', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docker-compose.yml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/App.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'notebooks/01_data_exploration/nyc311_snapshot_profile.ipynb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'notebooks/02_preprocessing_and_embeddings/borough_in_or_out.ipynb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'notebooks/02_preprocessing_and_embeddings/prepare_text_for_embedding.ipynb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'notebooks/03_target_definition/define_slow_resolution_label.ipynb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'notebooks/03_target_definition/prepare_heat_2023_2024_cohort_labels.ipynb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'notebooks/04_evaluation_design/build_manager_question_eval_set.ipynb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'notebooks/05_tabular_baseline/01_intake_risk_baseline.ipynb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'notebooks/06_agentic_workflow/01_triage_routing_graph.ipynb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pyproject.toml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/resolveiq/api/main.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/resolveiq/cases.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/resolveiq/workflow.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/test_api.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/test_cases.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/test_workflow.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'uv.lock', LF will be replaced by CRLF the next time Git touches it
+ .gitignore                                         |  10 [32m+[m[31m-[m
+ Makefile                                           |  28 [32m+[m[31m-[m
+ README.md                                          | 182 [32m+++++++[m
+ docker-compose.yml                                 |   6 [32m+[m[31m-[m
+ docs/BUILD_WORKFLOW.md                             | 120 [31m-----[m
+ docs/STATUS.md                                     |  92 [31m----[m
+ frontend/src/App.jsx                               |  19 [32m+[m[31m-[m
+ .../nyc311_snapshot_profile.ipynb                  |   8 [31m-[m
+ .../borough_in_or_out.ipynb                        |   8 [31m-[m
+ .../prepare_text_for_embedding.ipynb               |  16 [31m-[m
+ .../define_slow_resolution_label.ipynb             | 132 [32m+[m[31m----[m
+ .../prepare_heat_2023_2024_cohort_labels.ipynb     |   8 [31m-[m
+ .../build_manager_question_eval_set.ipynb          | 112 [32m+[m[31m---[m
+ .../01_intake_risk_baseline.ipynb                  |  33 [32m+[m[31m-[m
+ .../01_triage_routing_graph.ipynb                  |  24 [32m+[m[31m-[m
+ notebooks/Untitled.ipynb                           | 597 [31m---------------------[m
+ pyproject.toml                                     |   1 [32m+[m
+ src/resolveiq/api/main.py                          |   2 [32m+[m
+ src/resolveiq/cases.py                             |  93 [32m+++[m[31m-[m
+ src/resolveiq/config.py                            |   6 [32m+[m
+ src/resolveiq/workflow.py                          |  44 [32m+[m[31m-[m
+ tests/test_api.py                                  |  33 [32m++[m
+ tests/test_cases.py                                |  38 [32m++[m
+ tests/test_workflow.py                             |  17 [32m+[m[31m-[m
+ uv.lock                                            |   2 [32m+[m
+ 25 files changed, 502 insertions(+), 1129 deletions(-)
