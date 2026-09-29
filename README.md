@@ -167,9 +167,9 @@ Equality does not qualify. Cases created after or exactly at intake are excluded
 - Live retrieval depends on Gemini embeddings and a running local Qdrant collection; scoring and retrieval are separate workflow steps.
 - ResolveIQ is a local portfolio workbench, not a public service or an automated case-management system.
 
-## Project Learning Path
+## Project Workflow
 
-The implementation follows the tutor workflow used for this project:
+The implementation follows this workflow used for this project:
 
 1. Explore and prepare data in notebooks.
 2. Define labels and evaluate a baseline on development data.
